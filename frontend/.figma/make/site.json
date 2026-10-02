@@ -1,0 +1,10 @@
+{
+  "description": "Discover personalized Vastu, Astro Vastu, and Numerology consultations designed to harmonize your living and working spaces for enhanced well-being.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
