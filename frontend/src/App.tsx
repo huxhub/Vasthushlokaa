@@ -474,10 +474,10 @@ function Header({ path }: { path: string }) {
         >
           <Icon name={mobile ? "close" : "menu"} />
         </button>
-        <Link to="/" className="brand" aria-label="Vasthushlokaa home">
-          <img src="/logo.png" alt="Vasthushlokaa Logo" className="brand-logo-img" />
+        <Link to="/" className="brand" aria-label="Vastushlokaa home">
+          <img src="/logo.png" alt="Vastushlokaa Logo" className="brand-logo-img" />
           <span>
-            Vasthushlokaa
+            Vastushlokaa
             <span className="brand-caption">
               SPACES. NUMBERS. POSSIBILITIES.
             </span>
@@ -521,7 +521,7 @@ function Header({ path }: { path: string }) {
               )}
             </div>
           ))}
-          <Link to="/vasthushlokaa">Vasthushlokaa</Link>
+          <Link to="/Vastushlokaa">Vastushlokaa</Link>
           <Link to="/blog">Blog</Link>
           <Link to="/contact">Contact Us</Link>
         </nav>
@@ -557,7 +557,7 @@ function Header({ path }: { path: string }) {
               {s.name}
             </Link>
           ))}
-          <Link to="/vasthushlokaa">Vasthushlokaa</Link>
+          <Link to="/Vastushlokaa">Vastushlokaa</Link>
           <Link to="/blog">Blog</Link>
           <Link to="/contact">Contact</Link>
           <CTA>Book a Consultation</CTA>
@@ -624,7 +624,7 @@ const heroSlides = [
     secCtaText: "Book Consultation",
     secCtaLink: "/book-consultation",
     imageId: images.courtyard,
-    imageAlt: "Sunlit stone architecture, an illustration of Vasthushlokaa’s spatial approach",
+    imageAlt: "Sunlit stone architecture, an illustration of Vastushlokaa’s spatial approach",
     tag: "NUMEROLOGY & ASTRO VASTU",
   },
 ]
@@ -1052,7 +1052,7 @@ function AboutSection({ full = false }: { full?: boolean }) {
       <div className="about-visual reveal">
         <Picture
           id={images.courtyard}
-          alt="Sunlit stone architecture, an illustration of Vasthushlokaa’s thoughtful spatial approach"
+          alt="Sunlit stone architecture, an illustration of Vastushlokaa’s thoughtful spatial approach"
         />
         <div className="about-monogram">
           V<span>A PERSONAL PERSPECTIVE</span>
@@ -1088,8 +1088,8 @@ function AboutSection({ full = false }: { full?: boolean }) {
           <span>ASTRO VASTU</span>
           <span>NUMEROLOGY</span>
         </div>
-        <CTA to={full ? "/book-consultation" : "/vasthushlokaa"} text>
-          {full ? "Consult with Vasthushlokaa" : "Meet Vasthushlokaa"}
+        <CTA to={full ? "/book-consultation" : "/Vastushlokaa"} text>
+          {full ? "Consult with Vastushlokaa" : "Meet Vastushlokaa"}
         </CTA>
       </div>
     </section>
@@ -1142,15 +1142,15 @@ function FeatureSection({ commercial = false }: { commercial?: boolean }) {
   const items = commercial
     ? s.items
     : [
-        "Existing houses",
-        "Apartments & villas",
-        "New construction",
-        "Renovation",
-        "Floor-plan analysis",
-        "Directional analysis",
-        "Room placement",
-        "Energy balancing",
-      ]
+      "Existing houses",
+      "Apartments & villas",
+      "New construction",
+      "Renovation",
+      "Floor-plan analysis",
+      "Directional analysis",
+      "Room placement",
+      "Energy balancing",
+    ]
   return (
     <section className={`feature-section ${commercial ? "commercial" : ""}`}>
       <Picture
@@ -1217,9 +1217,8 @@ function Numerology({ standalone = false }: { standalone?: boolean }) {
   const [number, setNumber] = useState(1)
   return (
     <section
-      className={`numerology-section section-pad ${
-        standalone ? "standalone" : ""
-      }`}
+      className={`numerology-section section-pad ${standalone ? "standalone" : ""
+        }`}
     >
       <div className="number-copy">
         <Eyebrow>THE LANGUAGE OF NUMBERS</Eyebrow>
@@ -1425,7 +1424,7 @@ function Reviews() {
       </div>
       <div className="review-links">
         <a
-          href="https://www.google.com/maps/search/Vasthushlokaa+Vastu+consultant"
+          href="https://www.google.com/maps/search/Vastushlokaa+Vastu+consultant"
           target="_blank"
           rel="noreferrer"
           className="text-link"
@@ -1578,8 +1577,8 @@ function Footer() {
       <div className="footer-top">
         <div className="footer-brand">
           <Link to="/" className="brand">
-            <img src="/logo.png" alt="Vasthushlokaa Logo" className="brand-logo-img" />
-            <span>Vasthushlokaa</span>
+            <img src="/logo.png" alt="Vastushlokaa Logo" className="brand-logo-img" />
+            <span>Vastushlokaa</span>
           </Link>
           <p>
             Ancient knowledge.
@@ -1620,7 +1619,7 @@ function Footer() {
             </Link>
           ))}
           <Link to="/blog">Knowledge & Insights</Link>
-          <Link to="/vasthushlokaa">Vasthushlokaa Profile</Link>
+          <Link to="/Vastushlokaa">Vastushlokaa Profile</Link>
         </div>
         <div className="footer-column footer-contact">
           <span>LET'S CONNECT</span>
@@ -1630,7 +1629,7 @@ function Footer() {
             is the first step.
           </p>
           <Link to="/contact">
-            Contact Vasthushlokaa
+            Contact Vastushlokaa
             <Icon />
           </Link>
           <Link to="/book-consultation">
@@ -1641,7 +1640,7 @@ function Footer() {
         </div>
       </div>
       <div className="footer-bottom">
-        <span>© {new Date().getFullYear()} Vasthushlokaa. All rights reserved.</span>
+        <span>© {new Date().getFullYear()} Vastushlokaa. All rights reserved.</span>
         <span>IN HARMONY WITH SPACE & SELF</span>
         <a href="#top">Back to top ↑</a>
       </div>
@@ -1825,26 +1824,26 @@ function ServicePage({ service }: { service: Service }) {
       )}
       {(service.slug === "astro-vastu" ||
         service.slug === "astro-numerology") && (
-        <section className="service-orbit section-pad">
-          <OrbitGraphic />
-          <div>
-            <Eyebrow>A PERSONAL JOURNEY</Eyebrow>
-            <h2>
-              Connected perspectives.
-              <br />
-              <em>Individual guidance.</em>
-            </h2>
-            <ol className="vertical-journey">
-              {service.items.map((item, i) => (
-                <li key={item}>
-                  <span>0{i + 1}</span>
-                  {item}
-                </li>
-              ))}
-            </ol>
-          </div>
-        </section>
-      )}
+          <section className="service-orbit section-pad">
+            <OrbitGraphic />
+            <div>
+              <Eyebrow>A PERSONAL JOURNEY</Eyebrow>
+              <h2>
+                Connected perspectives.
+                <br />
+                <em>Individual guidance.</em>
+              </h2>
+              <ol className="vertical-journey">
+                {service.items.map((item, i) => (
+                  <li key={item}>
+                    <span>0{i + 1}</span>
+                    {item}
+                  </li>
+                ))}
+              </ol>
+            </div>
+          </section>
+        )}
       {service.slug === "numerology" && <Numerology standalone />}
       <section className="coverage-section section-pad">
         <div>
@@ -1905,7 +1904,7 @@ function Profile() {
       <section className="profile-heading section-pad">
         <Eyebrow>VASTU & NUMEROLOGY CONSULTANT</Eyebrow>
         <h1>
-          Vasthushlokaa
+          Vastushlokaa
           <span>
             Wisdom with a<br />
             <em>personal perspective.</em>
@@ -1937,7 +1936,7 @@ function Profile() {
             around the person, the place, and the questions that matter to them.
           </p>
           <p>
-            Vasthushlokaa’s detailed biography, training, and professional milestones
+            Vastushlokaa’s detailed biography, training, and professional milestones
             will be shared here once verified. In the meantime, explore the
             philosophy and areas of practice that guide a personal consultation.
           </p>
@@ -1967,7 +1966,7 @@ function Profile() {
           ))}
         </div>
         <small>
-          Detailed milestones to be added with Vasthushlokaa’s approved biography.
+          Detailed milestones to be added with Vastushlokaa’s approved biography.
         </small>
       </section>
       <ServiceDiscovery />
@@ -1987,7 +1986,7 @@ function Article({ slug }: { slug: string }) {
           <h1>{article.title}</h1>
           <p>{article.excerpt}</p>
           <div className="article-byline">
-            <span>Vasthushlokaa Editorial</span>
+            <span>Vastushlokaa Editorial</span>
             <span>
               Published <time dateTime="2026-06-01">1 June 2026</time>
             </span>
@@ -2249,7 +2248,7 @@ function Booking({ contact = false }: { contact?: boolean }) {
     }
     if (contact || step === 5) {
       try {
-        sessionStorage.setItem("vasthushlokaa-consultation", JSON.stringify(data))
+        sessionStorage.setItem("Vastushlokaa-consultation", JSON.stringify(data))
         setSuccess(true)
       } catch {
         setError(
@@ -2288,7 +2287,7 @@ function Booking({ contact = false }: { contact?: boolean }) {
           <em>has been received.</em>
         </h1>
         <p>
-          Vasthushlokaa's team will contact you to confirm the appointment
+          Vastushlokaa's team will contact you to confirm the appointment
           <br />
           once online submission is connected.
         </p>
@@ -2326,7 +2325,7 @@ function Booking({ contact = false }: { contact?: boolean }) {
         <p>
           {contact
             ? "Share what is on your mind. A thoughtful conversation is the first step."
-            : "Choose the type of consultation you need and share a few details with Vasthushlokaa."}
+            : "Choose the type of consultation you need and share a few details with Vastushlokaa."}
         </p>
       </div>
       <div className="booking-layout">
@@ -2364,9 +2363,8 @@ function Booking({ contact = false }: { contact?: boolean }) {
                     key={name}
                     disabled={i > step}
                     onClick={() => setStep(i)}
-                    className={`${i === step ? "current" : ""} ${
-                      i < step ? "completed" : ""
-                    }`}
+                    className={`${i === step ? "current" : ""} ${i < step ? "completed" : ""
+                      }`}
                   >
                     <span>
                       {i < step ? <Icon name="check" /> : `0${i + 1}`}
@@ -2406,9 +2404,8 @@ function Booking({ contact = false }: { contact?: boolean }) {
                 {consultationOptions.map((option, i) => (
                   <label
                     key={option}
-                    className={`consultation-option ${
-                      data.type === option ? "selected" : ""
-                    }`}
+                    className={`consultation-option ${data.type === option ? "selected" : ""
+                      }`}
                   >
                     <input
                       type="radio"
@@ -2654,22 +2651,22 @@ function usePageMetadata(path: string) {
       ? articles.find((a) => path === `/blog/${a.slug}`)
       : null
     const title = service
-      ? `${service.name} Consultation | Vasthushlokaa`
+      ? `${service.name} Consultation | Vastushlokaa`
       : article
-        ? `${article.title} | Vasthushlokaa Insights`
-        : path === "/vasthushlokaa" || path === "/sunandha"
-          ? "Meet Vasthushlokaa | Vastu & Numerology Consultant"
+        ? `${article.title} | Vastushlokaa Insights`
+        : path === "/Vastushlokaa" || path === "/sunandha"
+          ? "Meet Vastushlokaa | Vastu & Numerology Consultant"
           : path === "/blog"
-            ? "Knowledge & Insights | Vasthushlokaa"
+            ? "Knowledge & Insights | Vastushlokaa"
             : path === "/contact"
-              ? "Contact Vasthushlokaa | Start a Conversation"
+              ? "Contact Vastushlokaa | Start a Conversation"
               : path === "/book-consultation"
-                ? "Book a Consultation | Vasthushlokaa"
-                : "Vasthushlokaa | Vastu, Astro Vastu & Numerology"
+                ? "Book a Consultation | Vastushlokaa"
+                : "Vastushlokaa | Vastu, Astro Vastu & Numerology"
     const description =
       service?.description ||
       article?.excerpt ||
-      "Thoughtful Vastu, Astro Vastu and Numerology guidance. Explore a more harmonious relationship with your space, your choices, and your personal journey with Vasthushlokaa."
+      "Thoughtful Vastu, Astro Vastu and Numerology guidance. Explore a more harmonious relationship with your space, your choices, and your personal journey with Vastushlokaa."
     document.title = title
     const meta = (name: string, content: string, property = false) => {
       let tag = document.querySelector(
@@ -2719,21 +2716,21 @@ function usePageMetadata(path: string) {
       url: `${window.location.origin}${path}`,
       ...(service
         ? {
-            serviceType: service.name,
-            provider: { "@type": "Organization", name: "Vasthushlokaa" },
-            ...(service.slug === "geo-vastu-uae"
-              ? { areaServed: "United Arab Emirates" }
-              : {}),
-          }
+          serviceType: service.name,
+          provider: { "@type": "Organization", name: "Vastushlokaa" },
+          ...(service.slug === "geo-vastu-uae"
+            ? { areaServed: "United Arab Emirates" }
+            : {}),
+        }
         : {}),
       ...(article
         ? {
-            headline: article.title,
-            author: { "@type": "Organization", name: "Vasthushlokaa Editorial" },
-            image: `${window.location.origin}${photo(article.image)}`,
-            datePublished: "2026-06-01",
-            dateModified: "2026-06-01",
-          }
+          headline: article.title,
+          author: { "@type": "Organization", name: "Vastushlokaa Editorial" },
+          image: `${window.location.origin}${photo(article.image)}`,
+          datePublished: "2026-06-01",
+          dateModified: "2026-06-01",
+        }
         : {}),
     })
   }, [path])
@@ -2799,7 +2796,7 @@ export default function App() {
   let page: ReactNode = <NotFound />
   if (path === "/") page = <Home />
   else if (service) page = <ServicePage service={service} />
-  else if (path === "/vasthushlokaa" || path === "/sunandha") page = <Profile />
+  else if (path === "/Vastushlokaa" || path === "/sunandha") page = <Profile />
   else if (path === "/blog")
     page = (
       <>
